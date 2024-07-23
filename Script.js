@@ -103,3 +103,28 @@ function updateWeatherAnimation(weatherType) {
         weatherAnimation.innerHTML += '<div class="wind"></div>';
     }
 }
+
+
+//firebase
+
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAio9wC8ubETLl2451c_5ckvMVoN-5inwQ",
+    authDomain: "weather-app-8a383.firebaseapp.com",
+    projectId: "weather-app-8a383",
+    storageBucket: "weather-app-8a383.appspot.com",
+    messagingSenderId: "761502208346",
+    appId: "1:761502208346:web:552d2dcc08351193a76363",
+    measurementId: "G-YYTQ72EKKP"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
